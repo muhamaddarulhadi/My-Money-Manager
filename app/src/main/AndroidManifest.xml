@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.robber_hadi.MyMoneyManager">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_baru"
+        android:label="My Money Manager"
+        android:roundIcon="@mipmap/logo_baru"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Splash_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:parentActivityName=".Login" />
+        <activity
+            android:name=".Main"
+            android:parentActivityName=".Login" />
+        <activity android:name=".Login" />
+        <activity
+            android:name=".ForgotPassword"
+            android:parentActivityName=".Login" />
+        <activity android:name=".Spending" />
+        <activity android:name=".Transaction" />
+        <activity android:name=".Categories" />
+        <activity
+            android:name=".Expense"
+            android:parentActivityName=".Spending" />
+        <activity
+            android:name=".Income"
+            android:parentActivityName=".Spending" />
+        <!--<activity android:name=".CustomListExpense"></activity>-->
+    </application>
+
+</manifest>
